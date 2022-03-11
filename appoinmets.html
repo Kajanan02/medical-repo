@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Appoinment</title>
+    <link rel="stylesheet" href="css/appoinment.css">
+    <script src="js/appoinment-validation.js"></script>
+</head>
+<!-- Facebook testuu -->
+<!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> --> 
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <a href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo-img"></a>
+            </div>
+                <div class="contact-no">   
+                    <img src="images/appoinment/icons8-phone-48.png" alt="Mobile" class="mobile-logo">  
+                    <div>
+                        <h4>076-229-4258</h4>            
+                        <span>Need help? Call 24/7</span> 
+                    </div>   
+                    
+                </div>
+        </div>
+
+        <div class="loder" id="load">
+            <div class="loading">
+                <img src="images/appoinment/loader.gif" alt="loader">
+
+            </div>
+
+        </div>
+
+        <div class="form-container">
+            <div class="form-heading">It's easy to make an appoinment here in MediCare</div>
+          <form id="form"  method="GET">
+            <div class="form-box">
+                <div class="half">
+                <select name="category" id="category" class='form-control select'>
+                    <option hidden value="">Select Category</option>
+                    <option value="Ophthalmology">Ophthalmology</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Radiology">Radiology</option>
+                    <option value="ICU Emergency">ICU</option>
+                    <option value="Orthopaedics">Orthopaedics</option>
+                    <option value="Microbiology">Microbiology</option>
+                </select>
+            </div>
+
+            <div class="half">
+                <select name="doctors" id="doctors" class='form-control select' required>
+                    <option hidden value="">Select Doctors</option>
+                    <option value="Dr. Shehan Perera">Dr. Shehan Perera</option>
+                    <option value="Dr. Fasial Ahmad">Dr. Fasial Ahmad</option>
+                    <option value="Dr. Zoysa Rajapakse">Dr. Zoysa Rajapakse</option>
+                    <option value="Dr. Iqbal Wani">Dr. Iqbal Wani</option>
+                    <option value="Dr. Gamini Pathirana">Dr. Gamini Pathirana</option>
+                    <option value="Dr. Malaravan">Dr. Malaravan</option>
+                </select>
+            </div>
+
+            <div class="half">
+                <input name="date" id="date" type="date" class="form-control" placeholder="Select Date"  style="height: 24px;width: 212px;">
+            </div>
+
+            <div class="half">
+                <input name="email" id="email" type="email" class="form-control" placeholder="Enter Email"  style="height: 24px;width: 212px;">
+            </div>
+
+            <div class="half">
+                <input name="names" id="names" type="text" class="form-control" placeholder="Enter Name"  style="height: 24px;width: 212px;">
+            </div>
+
+            <div class="half">
+                <input name="mobile" id="mobile" type="text" class="form-control" placeholder="Enter Mobile No"  style="height: 24px;width: 212px;">
+            </div>
+            <div class="full">
+                <textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message" style="width: 99%;" ></textarea>
+            </div>
+            <div class="full">
+                <div class="center">
+                    <h5 id="error"><span id="err-txt"></span></h4>
+                <button class="btn-primary" type="button" onclick="validateForm(event)">Make Appoinment</button>
+        </div>
+            </div>
+            </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- <div class="elfsight-app-c49cd9d5-e9f8-4b22-b372-0fced5de40fb"></div> -->
+
+
+    <section class="footer">
+        <div>© Copyright Reserved to <span class="txt-primary">MediCare</span> by Group 3</div>
+    </section>
+</body>
+</html>
